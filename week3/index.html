@@ -69,6 +69,40 @@
 
 	</section>
 
+	<section id = "reviews">
+		<h2>Reviews</h2>
+		<form action="/reviews" method="post">
+			<label for="name" >Name</label>
+			<input id="name" type="text" name="name">
+			<br />
+
+			<label for="rating">Rating</label>
+			1<input type="radio" name="rating" value="1">
+			2<input type="radio" name="rating" value="2">
+			3<input type="radio" name="rating" value="3">
+			4<input type="radio" name="rating" value="4">
+			5<input type="radio" name="rating" value="5">
+			<br />
+
+			<label for="expertise">Cooking Experience</label>
+			<select id="expertise" name="expertise">
+				<option value="Select Cooking Experience" disabled="true" selected="true">Select Cooking Experience</option>
+				<option value="Sometimes Cook">Sometimes Cook</option>
+				<option value="Cook Everyday">Cook Everyday</option>
+				<option value="Cooking is a Hobby">Cooking is a Hobby</option>
+			</select>
+			<br />
+
+			<label>
+				Review
+				<textarea name="review" cols="30" rows="10"></textarea>
+			</label>
+
+			<input type="submit" value="Submit Review">
+
+		</form>
+	</section>
+
 	<footer>
 		<p>Original Recipe by <a href="https://playswellwithbutter.com/salted-cream-cold-foam-cold-brew-coffee-recipe">playswellwithbutter</a></p>
 		<!-- the contents of this website come from https://playswellwithbutter.com/salted-cream-cold-foam-cold-brew-coffee-recipe/-->
