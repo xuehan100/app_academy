@@ -1,0 +1,116 @@
+
+
+/* HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}*/
+
+/* This selector selects all image elements that are children (1 level deep)
+of a header element */
+header > img {
+  width: 100px;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  background-color: #FEFFF1;
+}
+
+.ingredients-list {
+  list-style: square inside;
+}
+
+ol {
+  list-style: square inside;
+  color: green;
+}
+
+ul {
+  list-style: none;
+}
+
+/* This selector selects ALL anchor tag children of ALL list elements that
+are children of an Unordered List element */
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Set the cursor:pointer and outline:none properties for all radio buttons, 
+select elements, and submit buttons.*/
+input[type="radio"], select, input[type="submit"] {
+  cursor: pointer; /* arrow becomes a hand*/
+  outline: none;
+}
+
+/*Style the background-color of the submit button gold using the last-child 
+selector and give it a darkening hover effect.*/
+input:last-child {
+  background-color: gold;
+}
+
+/*Color every other list element in the directions list with a light-grey background.*/
+ol li:nth-of-type(2n) {
+  background-color: whitesmoke;
+}
+
+
+/*Use the + operator to select the first review immediately after the Reviews
+header element and give it a 1px, solid, black, top border 
+(Hint: the class for a submitted review will be .user_review).*/
+h2 + .user_review {
+  border-top: 1px solid black;
+}
+
+/*Style the radio buttons with stars! Use the stars.png file in the assets folder. 
+You will need to use the WebKit extension property -webkit-appearance: none;.*/
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  background-image: url(./stars.png);
+  vertical-align: bottom;
+}
+
+/*The stars will be blue when hovered and will be yellow when checked. 
+Use the :hover and :checked pseudo-classes to change the background-position 
+property of the radio buttons (Hint: You want to move the background image to 
+ow a different part of the stars.png image).*/
+input[type="radio"]:hover{
+  background-position: 30px 60px;
+}
+
+input[type="radio"]:checked {
+  background-position: 30px 30px;
+}
+
+
+
+
+

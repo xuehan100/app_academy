@@ -1,0 +1,36 @@
+	/* selector {
+  		property: value; /* This is a comment. Don't forget your semicolons! 
+	} */
+
+	p {
+		color: black;
+	}
+
+	p span {
+		font-weight: bold;
+	}
+
+	p span.highlight {
+		color: green;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	ul li a {
+		text-decoration: none; /* Assures the elements are not underlined*/
+	}
+
+	.bg-grey {
+		background-color: whitesmoke;
+	}
+
+	* {
+    	border: 1px solid grey; /* puts a red border around EVERY element */
+	}
+
+	#special-text {
+		color: red;
+	}
+	

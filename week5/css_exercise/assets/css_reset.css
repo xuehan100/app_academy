@@ -1,0 +1,185 @@
+
+
+/* HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}*/
+
+/* This selector selects all image elements that are children (1 level deep)
+of a header element */
+header > img {
+  width: 100px;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 10px
+}
+
+h2 {
+  font-size: 32px;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  background-color: #FEFFF1;
+}
+
+.ingredients-list {
+  list-style: square inside;
+}
+
+/*Space out the list elements in the ingredients list with a top and bottom margin of 15px.
+Space out the directions the same way.*/
+.ingredients-list li {
+  margin: 15px 0px;
+}
+
+ol {
+  list-style: square inside;
+  color: green;
+}
+
+ul {
+  list-style: none;
+}
+
+/* This selector selects ALL anchor tag children of ALL list elements that
+are children of an Unordered List element */
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Set the cursor:pointer and outline:none properties for all radio buttons, 
+select elements, and submit buttons.*/
+input[type="radio"], select, input[type="submit"] {
+  cursor: pointer; /* arrow becomes a hand*/
+  outline: none;
+}
+
+/*Style the background-color of the submit button gold using the last-child 
+selector and give it a darkening hover effect.*/
+input:last-child {
+  background-color: gold;
+}
+
+/*Color every other list element in the directions list with a light-grey background.*/
+ol li:nth-of-type(2n) {
+  background-color: whitesmoke;
+}
+
+
+/*Use the + operator to select the first review immediately after the Reviews
+header element and give it a 1px, solid, black, top border 
+(Hint: the class for a submitted review will be .user_review).*/
+h2 + .user_review {
+  border-top: 1px solid black;
+}
+
+/*Style the radio buttons with stars! Use the stars.png file in the assets folder. 
+You will need to use the WebKit extension property -webkit-appearance: none;.*/
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  background-image: url(./stars.png);
+  vertical-align: bottom;
+}
+
+/*The stars will be blue when hovered and will be yellow when checked. 
+Use the :hover and :checked pseudo-classes to change the background-position 
+property of the radio buttons (Hint: You want to move the background image to 
+ow a different part of the stars.png image).*/
+input[type="radio"]:hover{
+  background-position: 30px 60px;
+}
+
+input[type="radio"]:checked {
+  background-position: 30px 30px;
+}
+
+/*Make our list elements in the nav menu into inline-block elements.*/
+nav ul li {
+  display: inline-block;
+}
+
+/*Give the links in those list elements a padding on all sides of 20px. 
+By default a tags are inline and cannot have any padding applied to them. 
+Change their display property to correct this default behavior.*/
+nav ul li a {
+  padding: 20px;
+  display: block;
+}
+
+/*Pick the correct display property to position the nav next to the logo.*/
+
+/*Set our main content region by giving the body a width of 900px.
+Use the classic centering trick margin: 0 auto to center the body.*/
+body {
+  margin: 0 auto; /*Common Centering Technique, the body will always in the center*/
+  width: 900px;
+}
+
+/*Give the main section a 700px width and the aside a width of 300px.
+Apply a display property to position the aside and section next to each other.
+Space them out with a 15px margin-right on the aside.
+If you find your ingredients list aligned to the bottom use the developer tools to find and correct the styling.*/
+section {
+  width: 700px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+aside {
+  width: 300px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+/*
+Use the display property to put input elements on their own row.
+At this point it probably looks better to remove the "Cooking Expertise" and "Rating" labels.
+*/
+input[type="text"], select {
+  display: block;
+  width: 175px;
+}
+
+/*Space out the select element with margin and assign widths to the text input, 
+select, and textarea to finish up our form.*/
+select {
+  margin: 10px 0;
+  width: 180px;
+}
+
+textarea {
+  width: 350px;
+}
+
+label {
+  display: block;
+}
+
+
+
+
+
